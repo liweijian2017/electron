@@ -61,7 +61,7 @@ v8::Local<v8::Promise> ShowCertificateTrust(
     const scoped_refptr<net::X509Certificate>& cert,
     const std::string& message) {
   v8::Isolate* isolate = v8::Isolate::GetCurrent();
-  atom::util::Promise promise(isolate());
+  atom::util::Promise promise(isolate);
   v8::Local<v8::Promise> handle = promise.GetHandle();
 
   PCCERT_CHAIN_CONTEXT chain_context;
