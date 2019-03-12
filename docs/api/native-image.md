@@ -148,7 +148,7 @@ console.log(image)
 Returns `NativeImage`
 
 Creates a new `NativeImage` instance from `buffer` that contains the raw bitmap
-pixel data returned by `toBitmap()`.
+pixel data returned by `toBitmap()`. The specific format is platform-dependent.
 
 ### `nativeImage.createFromBuffer(buffer[, options])`
 
